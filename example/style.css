@@ -1,0 +1,35 @@
+/**
+示例样式
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    color: var(--text-color);
+    height: 100vh;
+    transition: all 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+    border-radius: 7px;
+    margin-right: 4px;
+    cursor: pointer;
+}
