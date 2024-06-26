@@ -1,5 +1,5 @@
 {
-  "name": "hp-theme",
+  "name": "@healwrap/hp-theme",
   "version": "1.0.0",
   "description": "简单的主题工具",
   "type": "module",
@@ -7,7 +7,7 @@
   "scripts": {
     "clear": "rimraf build",
     "build": "npm run clear && rollup -c",
-    "publish": "npm run build && npm publish",
+    "publish": "npm run build && npm publish --access public",
     "publish-patch": "node ./scripts/publish.js patch && npm run publish",
     "publish-minor": "node ./scripts/publish.js minor && npm run publish",
     "publish-major": "node ./scripts/publish.js major && npm run publish",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",

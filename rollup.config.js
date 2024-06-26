@@ -1,9 +1,9 @@
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
-import { nodeResolve } from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
 import babel from '@rollup/plugin-babel'
 import terser from '@rollup/plugin-terser'
+import nodeResolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
 
 const config = [
   {
@@ -18,12 +18,11 @@ const config = [
       typescript({
         tsconfig: './tsconfig.json',
       }),
-      nodeResolve(), commonjs(), terser(),
+      nodeResolve(), commonjs(),
+      terser(),
       babel({
         babelHelpers: 'bundled',
-        include: 'src/**',
-        exclude: 'node_modules/**',
-        extensions: ['.js', '.ts'],
+        extensions: ['.js','.ts'],
       }),
     ],
   },

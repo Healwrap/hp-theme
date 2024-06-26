@@ -26,3 +26,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+## 自定义 ##
+pnpm-lock.yaml

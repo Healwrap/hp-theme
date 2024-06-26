@@ -1,6 +1,5 @@
 import { addPaletteToHTML, addThemeClassToHTML, generatePalette } from './core'
 
-
 /**
  * 初始化主题
  * @param colorConfig
